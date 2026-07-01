@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Mantra Travels to book your custom travel itineraries. Use our online enquiry form, check our coordinates or see our office map location.">
+  <meta name="keywords" content="contact travel agency, tour booking, trip planner, custom tour enquiry, travel agency address, customer support">
+  <meta name="author" content="Student Name">
+  <title>Contact & Booking | Mantra Travels</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header scrolled">
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="navLogo">
+        MANTRA<span>Travels</span>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger" id="hamburgerMenu" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link" id="linkHome">Home</a>
+        <a href="about.html" class="nav-link" id="linkAbout">About</a>
+        <a href="packages.html" class="nav-link" id="linkPackages">Packages</a>
+        <a href="gallery.html" class="nav-link" id="linkGallery">Gallery</a>
+        <a href="contact.html" class="nav-link active" id="linkContact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top: 70px;">
+    <!-- Subpage Hero Section -->
+    <section class="subpage-hero" style="background-image: url('images/about-banner.jpg');" id="contactHero">
+      <div class="subpage-hero-content">
+        <h1>Book Your Holiday</h1>
+        <div class="breadcrumb">
+          <a href="index.html" id="breadHome">Home</a>
+          <span>/</span>
+          <span id="breadContact">Contact & Booking</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section class="section-padding" id="contactSection">
+      <div class="container contact-wrapper">
+        
+        <!-- Contact details and Mock Map -->
+        <div class="contact-info" id="contactInfoArea">
+          <div class="info-card" id="infoCardAddr">
+            <div class="info-icon">📍</div>
+            <div class="info-text">
+              <h3>Office Headquarters</h3>
+              <p>102 Travel Plaza, Summer Street,<br>Connaught Place, New Delhi, 110001, India</p>
+            </div>
+          </div>
+
+          <div class="info-card" id="infoCardPhone">
+            <div class="info-icon">📞</div>
+            <div class="info-text">
+              <h3>Phone & Customer Care</h3>
+              <p>Office Hotline: +91 98765 43210<br>Toll-Free Support: 1800 123 4567</p>
+            </div>
+          </div>
+
+          <div class="info-card" id="infoCardEmail">
+            <div class="info-icon">✉</div>
+            <div class="info-text">
+              <h3>Email Addresses</h3>
+              <p>Bookings: booking@mantratravels.com<br>General Queries: info@mantratravels.com</p>
+            </div>
+          </div>
+
+          <!-- Interactive Mock Map Layout -->
+          <div class="mock-map" id="mapCard">
+            <div class="mock-map-bg"></div>
+            <div class="map-marker">
+              <div class="map-marker-pin"></div>
+              <span class="map-marker-text">Mantra Travels HQ</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking/Contact Form Container -->
+        <div class="booking-form-card" id="formCard">
+          <h2>Plan Your Dream Trip</h2>
+          
+          <form id="bookingForm" novalidate>
+            <div class="form-grid">
+              
+              <!-- Full Name -->
+              <div class="form-group" id="groupName">
+                <label for="name">Full Name *</label>
+                <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                <div class="form-error">Please enter your name.</div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group" id="groupEmail">
+                <label for="email">Email Address *</label>
+                <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                <div class="form-error">Please enter a valid email address.</div>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group" id="groupPhone">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" class="form-control" id="phone" placeholder="9876543210" required>
+                <div class="form-error">Please enter a valid 10-digit number.</div>
+              </div>
+
+              <!-- Destination Dropdown -->
+              <div class="form-group" id="groupDest">
+                <label for="destination">Select Destination *</label>
+                <select class="form-control" id="destination" required style="appearance: none; background-image: url('data:image/svg+xml;utf8,<svg fill=%22%230f2027%22 height=%2224%22 viewBox=%220 0 24 24%22 width=%2224%22 xmlns=%22http://www.w3.org/2000/svg%22><path d=%22M7 10l5 5 5-5z%22/><path d=%22M0 0h24v24H0z%22 fill=%22none%22/></svg>'); background-repeat: no-repeat; background-position: right 12px center;">
+                  <option value="" disabled selected>Choose package...</option>
+                  <option value="maldives">Maldives Luxury Escape ($1,499)</option>
+                  <option value="swiss">Swiss Alps Rail Adventure ($1,850)</option>
+                  <option value="cappadocia">Cappadocia Hot Air Balloon ($1,299)</option>
+                  <option value="paris">Parisian Spring Romance ($1,150)</option>
+                  <option value="other">Other Customized Destinations</option>
+                </select>
+                <div class="form-error">Please choose a destination.</div>
+              </div>
+
+              <!-- Departure Date -->
+              <div class="form-group" id="groupDate">
+                <label for="date">Travel Date *</label>
+                <input type="date" class="form-control" id="date" required>
+                <div class="form-error">Travel date cannot be in the past.</div>
+              </div>
+
+              <!-- Number of Travelers -->
+              <div class="form-group" id="groupTravelers">
+                <label for="travelers">No. of Travelers *</label>
+                <input type="number" class="form-control" id="travelers" min="1" placeholder="2" required>
+                <div class="form-error">Must be 1 or more travelers.</div>
+              </div>
+
+              <!-- Special Message -->
+              <div class="form-group form-group-full" id="groupMsg">
+                <label for="message">Special Requests / Message *</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Any specific hotels, dietary requests, or custom duration preferences..." required></textarea>
+                <div class="form-error">Please enter details or queries.</div>
+              </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; border: none;" id="btnSubmitForm">Submit Booking Enquiry</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Success Confirmation Overlay Modal -->
+    <div class="modal" id="successModal">
+      <div class="modal-content">
+        <div class="modal-icon">✓</div>
+        <h3>Enquiry Received!</h3>
+        <p>Thank you for submitting your booking request. One of our destination specialists will contact you within the next 24 hours to present a customized itinerary.</p>
+        <button class="btn btn-primary" id="modalClose" style="border: none; padding: 10px 24px;">Close Window</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- About column -->
+      <div class="footer-col footer-about" id="footerColAbout">
+        <a href="index.html" class="logo" style="color: var(--text-light); margin-bottom: 20px; display: inline-flex;" id="footerLogo">
+          MANTRA<span>Travels</span>
+        </a>
+        <p>We are a certified travel agency specializing in crafting immersive tour packages, beach escapes, mountain adventures, and global city tours.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook" id="socFB">f</a>
+          <a href="#" class="social-icon" aria-label="Twitter" id="socTW">t</a>
+          <a href="#" class="social-icon" aria-label="Instagram" id="socIG">i</a>
+          <a href="#" class="social-icon" aria-label="LinkedIn" id="socLI">in</a>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col" id="footerColLinks">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html" id="footLinkHome">Home</a></li>
+          <li><a href="about.html" id="footLinkAbout">About Us</a></li>
+          <li><a href="packages.html" id="footLinkPackages">Tour Packages</a></li>
+          <li><a href="gallery.html" id="footLinkGallery">Gallery</a></li>
+          <li><a href="contact.html" id="footLinkContact">Contact & Booking</a></li>
+        </ul>
+      </div>
+
+      <!-- Tour destinations link -->
+      <div class="footer-col" id="footerColDestinations">
+        <h3>Destinations</h3>
+        <ul class="footer-links">
+          <li><a href="packages.html" id="footDestMaldives">The Maldives</a></li>
+          <li><a href="packages.html" id="footDestSwitzerland">Swiss Alps</a></li>
+          <li><a href="packages.html" id="footDestCappadocia">Cappadocia, Turkey</a></li>
+          <li><a href="packages.html" id="footDestParis">Paris, France</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact details -->
+      <div class="footer-col" id="footerColContact">
+        <h3>Contact Us</h3>
+        <ul class="footer-contact">
+          <li>
+            <span class="contact-label">📍</span>
+            <span>102 Travel Plaza, Summer Street, New Delhi, India</span>
+          </li>
+          <li>
+            <span class="contact-label">📞</span>
+            <span>+91 98765 43210</span>
+          </li>
+          <li>
+            <span class="contact-label">✉</span>
+            <span>info@mantratravels.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright details -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Mantra Travels. All Rights Reserved | Developed for MANTRA 2026 Summer School</p>
+      <div class="footer-bottom-links">
+        <a href="#" id="footPrivacy">Privacy Policy</a>
+        <a href="#" id="footTerms">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
