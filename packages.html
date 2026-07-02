@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our curated travel packages. Choose from tropical beaches, winter alpine escapes, high-altitude hot air ballooning, and city discovery trips.">
+  <meta name="keywords" content="travel packages, holiday deals, Maldives package, Swiss Alps tour, Cappadocia balloon flight, Paris tour">
+  <meta name="author" content="Student Name">
+  <title>Tour Packages | Mantra Travels</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header scrolled">
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="navLogo">
+        MANTRA<span>Travels</span>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger" id="hamburgerMenu" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link" id="linkHome">Home</a>
+        <a href="about.html" class="nav-link" id="linkAbout">About</a>
+        <a href="packages.html" class="nav-link active" id="linkPackages">Packages</a>
+        <a href="gallery.html" class="nav-link" id="linkGallery">Gallery</a>
+        <a href="contact.html" class="nav-link" id="linkContact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding-top: 70px;">
+    <!-- Subpage Hero Section -->
+    <section class="subpage-hero" style="background-image: url('images/hero.jpg');" id="packagesHero">
+      <div class="subpage-hero-content">
+        <h1>Tour Packages</h1>
+        <div class="breadcrumb">
+          <a href="index.html" id="breadHome">Home</a>
+          <span>/</span>
+          <span id="breadPackages">Packages</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tour Packages Section -->
+    <section class="section-padding" id="packagesSection">
+      <div class="container">
+        <div class="section-header">
+          <h2>Find Your Next Destination</h2>
+          <p>Filter by your favorite style and discover detailed travel itineraries.</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-btn active" data-filter="all" id="filterAll">All Tours</button>
+          <button class="filter-btn" data-filter="beach" id="filterBeach">Beach Escapes</button>
+          <button class="filter-btn" data-filter="mountain" id="filterMountain">Alpine Mountain</button>
+          <button class="filter-btn" data-filter="adventure" id="filterAdventure">Adventure & Cultural</button>
+        </div>
+
+        <!-- Packages Card Grid -->
+        <div class="packages-grid" id="packagesGrid">
+          
+          <!-- Package 1: Beach -->
+          <div class="package-card" data-category="beach" id="packCard1">
+            <div class="package-img-wrapper">
+              <span class="package-badge">Beach</span>
+              <img src="images/gallery1.jpg" alt="Beautiful overwater hotel bungalows on light blue ocean water in the Maldives">
+              <div class="package-price">$1,499</div>
+            </div>
+            <div class="package-details">
+              <div class="package-meta">
+                <span>⏱ 7 Days / 6 Nights</span>
+                <span class="package-rating">★ 4.9</span>
+              </div>
+              <h3>Maldives Luxury Escape</h3>
+              <p>Unwind in premium overwater bungalows, swim in crystal-clear lagoons, and enjoy candlelit dinners on white-sand shores. Includes snorkeling, private deck, and transfers.</p>
+              <div class="package-footer">
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;" id="bookPack1">Book This Trip</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 2: Mountain -->
+          <div class="package-card" data-category="mountain" id="packCard2">
+            <div class="package-img-wrapper">
+              <span class="package-badge">Mountain</span>
+              <img src="images/gallery2.jpg" alt="A classic red railway train climbing through snowy pine trees and mountains in Switzerland">
+              <div class="package-price">$1,850</div>
+            </div>
+            <div class="package-details">
+              <div class="package-meta">
+                <span>⏱ 6 Days / 5 Nights</span>
+                <span class="package-rating">★ 4.8</span>
+              </div>
+              <h3>Swiss Alps Rail Adventure</h3>
+              <p>Experience the scenic glory of the Swiss Alps aboard legendary trains, trekking pine forests and staying in cozy chalets. Includes scenic passes, cogwheel trains, and premium lodge stays.</p>
+              <div class="package-footer">
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;" id="bookPack2">Book This Trip</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 3: Adventure -->
+          <div class="package-card" data-category="adventure" id="packCard3">
+            <div class="package-img-wrapper">
+              <span class="package-badge">Adventure</span>
+              <img src="images/gallery3.jpg" alt="Colorful hot air balloons floating over Cappadocia valley rock formations at dawn">
+              <div class="package-price">$1,299</div>
+            </div>
+            <div class="package-details">
+              <div class="package-meta">
+                <span>⏱ 5 Days / 4 Nights</span>
+                <span class="package-rating">★ 4.9</span>
+              </div>
+              <h3>Cappadocia Hot Air Balloon</h3>
+              <p>Fly over alien-like rock valleys in a hot air balloon, stay in luxury cave suites, and discover subterranean ancient cities. Includes flight ticket, guide, and daily traditional breakfast.</p>
+              <div class="package-footer">
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;" id="bookPack3">Book This Trip</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 4: Cultural/City -->
+          <div class="package-card" data-category="adventure" id="packCard4">
+            <div class="package-img-wrapper">
+              <span class="package-badge">Cultural</span>
+              <img src="images/gallery4.jpg" alt="The Eiffel Tower in Paris, France during spring framed by cherry blossoms">
+              <div class="package-price">$1,150</div>
+            </div>
+            <div class="package-details">
+              <div class="package-meta">
+                <span>⏱ 5 Days / 4 Nights</span>
+                <span class="package-rating">★ 4.7</span>
+              </div>
+              <h3>Parisian Spring Romance</h3>
+              <p>Stroll through the artistic streets of Paris, visit historical monuments, and enjoy standard river cruises along the Seine. Includes hotel, museum passes, and Eiffel tower access tickets.</p>
+              <div class="package-footer">
+                <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;" id="bookPack4">Book This Trip</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- About column -->
+      <div class="footer-col footer-about" id="footerColAbout">
+        <a href="index.html" class="logo" style="color: var(--text-light); margin-bottom: 20px; display: inline-flex;" id="footerLogo">
+          MANTRA<span>Travels</span>
+        </a>
+        <p>We are a certified travel agency specializing in crafting immersive tour packages, beach escapes, mountain adventures, and global city tours.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook" id="socFB">f</a>
+          <a href="#" class="social-icon" aria-label="Twitter" id="socTW">t</a>
+          <a href="#" class="social-icon" aria-label="Instagram" id="socIG">i</a>
+          <a href="#" class="social-icon" aria-label="LinkedIn" id="socLI">in</a>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col" id="footerColLinks">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html" id="footLinkHome">Home</a></li>
+          <li><a href="about.html" id="footLinkAbout">About Us</a></li>
+          <li><a href="packages.html" id="footLinkPackages">Tour Packages</a></li>
+          <li><a href="gallery.html" id="footLinkGallery">Gallery</a></li>
+          <li><a href="contact.html" id="footLinkContact">Contact & Booking</a></li>
+        </ul>
+      </div>
+
+      <!-- Tour destinations link -->
+      <div class="footer-col" id="footerColDestinations">
+        <h3>Destinations</h3>
+        <ul class="footer-links">
+          <li><a href="packages.html" id="footDestMaldives">The Maldives</a></li>
+          <li><a href="packages.html" id="footDestSwitzerland">Swiss Alps</a></li>
+          <li><a href="packages.html" id="footDestCappadocia">Cappadocia, Turkey</a></li>
+          <li><a href="packages.html" id="footDestParis">Paris, France</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact details -->
+      <div class="footer-col" id="footerColContact">
+        <h3>Contact Us</h3>
+        <ul class="footer-contact">
+          <li>
+            <span class="contact-label">📍</span>
+            <span>102 Travel Plaza, Summer Street, New Delhi, India</span>
+          </li>
+          <li>
+            <span class="contact-label">📞</span>
+            <span>+91 98765 43210</span>
+          </li>
+          <li>
+            <span class="contact-label">✉</span>
+            <span>info@mantratravels.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright details -->
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Mantra Travels. All Rights Reserved | Developed for MANTRA 2026 Summer School</p>
+      <div class="footer-bottom-links">
+        <a href="#" id="footPrivacy">Privacy Policy</a>
+        <a href="#" id="footTerms">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="js/main.js"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6a468f640ca5bd1d4476805d/1jshq090n';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>
